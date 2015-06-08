@@ -17,9 +17,10 @@ main, img, h1, h2, h3, p, strong, a, div, span, footer {
 }
 
 body {
-  font-family: sans-serif;
-  background: #fff;
+  font-family: "Open Sans", sans-serif;
+  background: #E0DFFF;
   color: #000;
+  text-align: center;
 }
 
 ul {
@@ -28,18 +29,15 @@ ul {
 
 h1 {
   font-size: 36px;
-  font-weight: 700;
   padding: 5px;
 }
 
 h2 {
   font-size: 32px;
-  font-weight: 700;
 }
 
 h3 {
   font-size: 28px;
-  font-weight: 400;
 }
 
 button {
@@ -50,4 +48,16 @@ button {
   background: #ccc;
   border-radius: 5px;
   cursor: pointer;
+}
+
+a {
+  color: #00E3FF;
+  -moz-transition: color 0.25s ease-in-out;
+  -webkit-transition: color 0.25s ease-in-out;
+  -ms-transition: color 0.25s ease-in-out;
+  transition: color 0.25s ease-in-out;
+}
+
+a:hover {
+  color: #001EBF;
 }
