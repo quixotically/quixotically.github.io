@@ -7,19 +7,37 @@
   </head>
   <body>
     <header class="about">
-      <h1>Hi! My name is Felicia.</h1>
-      <img src="images/profile-pic.jpg" alt="" />
+      <h1>Hi! I'm Felicia.</h1>
+      <figure class="prof-pic"><img src="images/profile-pic.jpg" alt="" /></figure>
+      <figcaption>I'm a web developer who loves to make and learn new things. I'm currently for hire. Below are my recent projects,
+      resume, and contact info. Please feel free to reach out!</figcaption>
     </header>
     <section class="projects">
       <h3>Projects:</h3>
-      <a href="http://airfnf.us">Airfnf</a>
-      <figure><img src="images/airfnf.png" alt="" />
-        <figcaption></figcaption>
-      </figure>
-
-      <a href="./Asteroids/">Asteroids 2P</a>
-      <img src="images/asteroids2p.png" alt="" />
-      <a href="https://github.com/quixotically/Chess">CLI Chess</a>
+      <div class="projects-container group">
+        <figure>
+          <a class="live" href="http://airfnf.us"></a>
+          <a class="github" href="https://github.com/quixotically/Airfnf"></a>
+          <img src="images/airfnf.png" alt="" />
+        </figure>
+        <figure>
+          <a class="live" href="./Asteroids/"></a>
+          <a class="github" href="https://github.com/quixotically/Asteroids"></a>
+          <img src="images/asteroids2p.png" alt="" />
+        </figure>
+        <figure>
+          <a class="github" href="https://github.com/quixotically/Chess"></a>
+          <img src="images/cli-chess.png" alt="" />
+        </figure>
+      </div>
+    </section>
+    <section class="resume">
+      <label class="download"><a href="./assets/felicia_wong_resume.pdf" download="feliciawong-resume.pdf">Download</a></label>
+      <object data="./assets/felicia_wong_resume.pdf" type="application/pdf" height="100%" width="100%">
+        <p>
+          Sorry, your browser cannot display the file. Please click the download link to view.
+        </p>
+      </object>
     </section>
     <footer class="contact">
       <a href="https://github.com/quixotically">Github</a>
