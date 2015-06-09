@@ -190,9 +190,17 @@ img {
 
 }
 
+.skills > h1 {
+  padding-bottom: 30px;
+}
+
 .skills-container {
   margin: 0 auto;
-  width: 440px;
+  width: 690px;
+}
+
+.skills-container > li, .skills-container > li > figcaption {
+  font-size: 18px;
 }
 
 .sprite {
@@ -201,7 +209,10 @@ img {
   height: 128px;
   float: left;
   padding: 5px;
+  position: relative;
+  margin-bottom: 50px;
 }
+
 
 /*.sprite.github { background-position: 0 0; }
 .sprite.linkedin-icon { background-position: 0 -138px; }
@@ -213,6 +224,11 @@ img {
 .sprite.jquery { background-position: 0 -966px; }
 .sprite.css3 { background-position: 0 -1104px; }
 .sprite.html5 { background-position: 0 -1242px; }
+
+.nudge {
+  width: 128px;
+  height: 128px;
+}
 
 .icon {
   width: 128px;
