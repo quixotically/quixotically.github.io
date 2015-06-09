@@ -24,13 +24,25 @@ main, img, h1, h2, h3, p, strong, a, div, span, footer, figure {
 
 body {
   font-family: "Open Sans", sans-serif;
-  background: #000;
-  color: #fff;
+  background: #fff;
+  color: #000;
   text-align: center;
+  font-size: 30px;
+  max-width: 750px;
+  margin: 0 auto;
 }
 
 section {
-  padding: 50px;
+
+}
+
+section::after {
+  content: "";
+  display: block;
+  width: 500px;
+  margin: 31px auto;
+  height: 1px;
+  background: #000;
 }
 
 ul {
@@ -38,16 +50,12 @@ ul {
 }
 
 h1 {
-  font-size: 36px;
-  padding: 5px;
-}
-
-h2 {
-  font-size: 32px;
+  font-size: 42px;
+  font-weight: bold;
+  color: #3342A0;
 }
 
 h3 {
-  font-size: 28px;
   padding: 5px;
 }
 
@@ -88,8 +96,6 @@ img {
   height: auto;
   margin: 0 auto;
   padding: 20px;
-  width: 500px;
-  font-size: 18px;
 }
 
 .prof-pic {
@@ -167,7 +173,6 @@ img {
 .projects-container figure:hover img {
   width: 470px;
   height: 320px;
-  opacity: 0.4;
 }
 
 .projects-container figure:first-child {
@@ -181,12 +186,52 @@ img {
   transition: 0.5s;
 }
 
-.resume .pdf-container {
-  width: 670px;
-  height: 865px;
+.skills {
+
+}
+
+.skills-container {
   margin: 0 auto;
+  width: 440px;
+}
+
+.sprite {
+  background: url('images/spritesheet.png') no-repeat top left;
+  width: 128px;
+  height: 128px;
+  float: left;
+  padding: 5px;
+}
+
+/*.sprite.github { background-position: 0 0; }
+.sprite.linkedin-icon { background-position: 0 -138px; }
+.sprite.email { background-position: 0 -276px; } */
+.sprite.ruby-icon { background-position: 0 -414px; }
+.sprite.rails { background-position: 0 -552px; }
+.sprite.javascript-icon { background-position: 0 -690px; }
+.sprite.backbone { background-position: 0 -828px; }
+.sprite.jquery { background-position: 0 -966px; }
+.sprite.css3 { background-position: 0 -1104px; }
+.sprite.html5 { background-position: 0 -1242px; }
+
+.icon {
+  width: 128px;
+  height: 128px;
+  float: left;
+  padding: 5px;
 }
 
 .download {
   font-size: 28px;
+}
+
+.links {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.links > li {
+  float: left;
+  padding: 40px;
+  width: 70px;
 }

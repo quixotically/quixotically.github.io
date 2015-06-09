@@ -6,12 +6,11 @@
     <link href="application.css" rel="stylesheet"/>
   </head>
   <body>
-    <header class="about">
+    <section class="about">
       <h1>Hi! I'm Felicia.</h1>
       <figure class="prof-pic"><img src="images/profile-pic.jpg" alt="" /></figure>
-      <figcaption>I'm a web developer who loves to make and learn new things. I'm currently for hire. Below are my recent projects,
-      resume, and contact info. Please feel free to reach out!</figcaption>
-    </header>
+      <figcaption>I'm an NYC-based web developer.</figcaption>
+    </section>
     <section class="projects">
       <h3>Projects</h3>
       <div class="projects-container group">
@@ -31,21 +30,29 @@
         </figure>
       </div>
     </section>
-    <section class="resume">
-      <h3>Resume</h3>
-      <figure class="pdf-container">
-        <object data="./assets/felicia_wong_resume.pdf" type="application/pdf" height="100%" width="100%">
-          <p>
-            Sorry, your browser cannot display the file. Please click the download link to view.
-          </p>
-        </object>
-      </figure>
-      <a class="download" href="./assets/felicia_wong_resume.pdf" download="feliciawong-resume.pdf">Download</a>
+    <section class="skills">
+      <h1>Skills</h1>
+      <ul class="skills-container group">
+        <li class='sprite ruby-icon'></li>
+        <li class='sprite rails'></li>
+        <li class='sprite javascript-icon'></li>
+        <li class='sprite backbone'></li>
+        <li class='sprite jquery'></li>
+        <li class='sprite css3'></li>
+        <li class='sprite html5'></li>
+        <li class='icon git'><img src="images/git.svg" alt="" /></li>
+        <li class='icon postgresql'><img src="images/PostgreSQL.svg" alt="" /></li>
+        <li class='icon aws'><img src="images/aws.svg" alt="" /></li>
+      </ul>
     </section>
-    <footer class="contact">
-      <a href="https://github.com/quixotically">Github</a>
-      <a href="https://linkedin.com/pub/felicia-wong/88/ba4/4a6">LinkedIn</a>
-      <a href="mailto:fmw212@nyu.edu">Email</a>
-    </footer>
+    <section class="contact-info">
+      <ul class="links group">
+        <li><a href="https://github.com/quixotically"><img src="images/githubsrc.png" alt="" /></a></li>
+        <li><a href="https://linkedin.com/pub/felicia-wong/88/ba4/4a6"><img src="images/linkedin.png" alt="" /></a></li>
+        <li><a href="assets/felicia_wong_resume.pdf"><img src="images/icon-cv.png" alt="" /></a></li>
+        <li><a href="mailto:fmw212@nyu.edu"><img src="images/email_icon.png" alt="" /></a></li>
+      </ul>
+    </section>
+    <a class="download" href="./assets/felicia_wong_resume.pdf" download="feliciawong-resume.pdf">Download</a>
   </body>
 </html>
