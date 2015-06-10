@@ -28,31 +28,34 @@ body {
   color: #000;
   text-align: center;
   font-size: 30px;
-  max-width: 750px;
-  margin: 0 auto;
 }
 
 section {
-
+  margin: 0 auto;
+  padding: 50px 0;
 }
 
-section::after {
+/*section::after {
   content: "";
   display: block;
   width: 500px;
   margin: 31px auto;
   height: 1px;
   background: #000;
-}
+}*/
 
 ul {
   list-style: none;
 }
 
 h1 {
-  font-size: 42px;
+  font-size: 60px;
   font-weight: bold;
-  color: #3342A0;
+  color: #fff;
+  text-shadow: 1px 1px 0 #3342A0,
+               2px 2px 0 #3342A0,
+               3px 3px 0 #3342A0,
+               4px 4px 0 #3342A0;
 }
 
 h3 {
@@ -92,10 +95,20 @@ img {
 }
 
 .about {
+  background: url("images/mountains.jpg") no-repeat top left;
+  background-position: 0 -200px;
   display: block;
-  height: auto;
+  max-width: 100%;
+  height: 700px;
   margin: 0 auto;
   padding: 20px;
+}
+
+.about-content {
+  width: 750px;
+  margin: 0 auto;
+  padding-top: 200px;
+  position: relative;
 }
 
 .prof-pic {
@@ -103,26 +116,69 @@ img {
   width: 200px;
   overflow: hidden;
   margin: 0 auto;
+  position: absolute;
+  left: 60px;
+  z-index: 1;
+  border: 3px solid #000;
+}
+
+.prof-text {
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  border-top: 5px solid #000;
+  border-bottom: 5px solid #000;
+  padding: 10px 10px 10px 250px;
+  margin: 30px 0 30px 30px;
+  position: relative;
+  left: 0px;
+  width: 380px;
+  text-align: left;
+}
+
+.prof-text > h1 {
+  font-size: 42px;
+  color: #fff;
+  text-shadow: 1px 1px 0 #3342A0,
+               2px 2px 0 #3342A0,
+               3px 3px 0 #3342A0,
+               4px 4px 0 #3342A0;
+}
+
+.projects {
+  background: #00E3FF;
+}
+
+.projects > h1 {
+  padding-bottom: 35px;
 }
 
 .projects-container {
-  width: 1412px;
+  width: 600px;
   margin: 0 auto;
-  border: 1px solid #fff;
   border-radius: 5px;
+  /*border: 1px solid #000;*/
+  /*background: #fff;*/
 }
 
 .projects-container figure {
-  float: left;
-  padding: 10px;
-  border-left: 1px solid #fff;
-  overflow: hidden;
-  transition: padding 0.5s;
   position: relative;
+  overflow: hidden;
 }
 
-.projects-container figure:hover {
-  padding: 0;
+.projects-container figure::before {
+  content: "";
+  display: block;
+  width: 300px;
+  margin: 31px auto;
+  height: 1px;
+  background: #000;
+}
+
+.projects-container > figcaption {
+  font-size: 24px;
+  padding: 10px;
+  text-align: left;
 }
 
 .projects-container figure:hover::after {
@@ -135,6 +191,7 @@ img {
   left: 0;
   right: 0;
 }
+
 .projects-container figure:hover .inner-link:after {
   display: block;
   border: 3px solid;
@@ -147,8 +204,10 @@ img {
   padding: 5px 20px;
   z-index: 1;
   position: absolute;
-  top: 150px;
+  top: 212px;
   font-size: 34px;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.8);
 }
 
 .projects-container figure:hover .inner-link:hover:after {
@@ -156,38 +215,38 @@ img {
 }
 
 .projects-container figure:hover .live:after {
-  left: 100px;
+  left: 155px;
   content: "Live";
 }
 
 .projects-container figure:hover .github:after {
-  left: 250px;
+  left: 305px;
   content: "GitHub";
 }
 
 .projects-container figure:hover .gh-only:after {
-  left: 150px;
+  left: 220px;
   content: "GitHub";
 }
 
 .projects-container figure:hover img {
-  width: 470px;
-  height: 320px;
-}
-
-.projects-container figure:first-child {
-  border-left: none;
+  /*width: 470px;
+  height: 320px;*/
 }
 
 .projects-container figure img {
-  width: 450px;
-  height: 300px;
   border-radius: 5px;
-  transition: 0.5s;
+  margin: 0 auto;
+  /*width: 450px;
+  height: 300px;*/
+  /*-moz-transition: 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  -ms-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;*/
 }
 
 .skills {
-
+  background: #7EFF93;
 }
 
 .skills > h1 {
@@ -239,6 +298,11 @@ img {
 
 .download {
   font-size: 28px;
+  display: none;
+}
+
+.contact-info {
+  background: #ED63A1;
 }
 
 .links {
