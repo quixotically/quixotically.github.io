@@ -164,6 +164,10 @@ img {
   opacity: 1;
 }
 
+.prof-pic:hover ~ .prof-more {
+  opacity: 1;
+}
+
 .projects {
   background: #00E3FF;
 }
