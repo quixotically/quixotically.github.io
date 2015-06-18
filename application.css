@@ -175,9 +175,13 @@ img {
   background: #000;
 }
 
+.projects-container > h3 {
+  font-weight: bold;
+}
+
 .projects-container > figcaption {
   font-size: 24px;
-  padding: 10px;
+  padding: 0 5px 10px;
   text-align: left;
 }
 
